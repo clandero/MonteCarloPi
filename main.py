@@ -15,8 +15,7 @@ def index(t):
 		if m.sqrt(x2 + y2) < 1.0:
 			inside += 1
 
-	return jsonify({'inside':inside,'total':total})
+	return str(inside)
 
 if __name__ == "__main__":
     app.run(debug=True)
-
